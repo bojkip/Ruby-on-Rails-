@@ -25,6 +25,13 @@
           <li class="nav-item">
             <%= button_to "Logout", logout_path, class: "btn btn-outline-secondary btn-sm mt-1 mx-1", method: :delete %>
           </li>
+          <li class="nav-item">
+            <% if current_user.admin? %>
+            <div class= "nav-link text-danger">
+              <%= "Admin" %>
+            </div>
+            <% end %>
+          </li>
         <% else %>
           <li class="nav-item">
             <%= link_to "Log in", login_path, class: "btn btn-outline-secondary btn-sm mt-1 mx-1" %>
