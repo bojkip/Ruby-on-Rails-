@@ -1,0 +1,883 @@
+Started GET "/" for 127.0.0.1 at 2022-04-03 21:08:40 +0200
+  [1m[35m (39.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 140.3ms | Allocations: 699)
+Completed 200 OK in 759ms (Views: 320.2ms | ActiveRecord: 0.0ms | Allocations: 6699)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:35:33 +0200
+  [1m[35m (70.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 75.8ms | Allocations: 313)
+Completed 200 OK in 652ms (Views: 292.5ms | ActiveRecord: 0.0ms | Allocations: 5174)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:37:59 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.1ms | Allocations: 133)
+Completed 200 OK in 71ms (Views: 50.9ms | ActiveRecord: 0.0ms | Allocations: 1097)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:38:50 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.6ms | Allocations: 18)
+Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:39:59 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.1ms | Allocations: 147)
+Completed 200 OK in 68ms (Views: 51.5ms | ActiveRecord: 0.0ms | Allocations: 1111)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:40:00 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-03 22:40:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:40:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:40:22 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.2ms | Allocations: 151)
+Completed 200 OK in 49ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 1111)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:40:23 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-03 22:40:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:40:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-03 22:41:10 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 15ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-03 22:41:10 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:41:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 22:41:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-03 23:59:02 +0200
+  [1m[35m (104.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 86.2ms | Allocations: 328)
+Completed 200 OK in 872ms (Views: 439.1ms | ActiveRecord: 0.0ms | Allocations: 5186)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-03 23:59:13 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-03 23:59:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:10:57 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 18)
+Completed 200 OK in 16ms (Views: 4.2ms | Allocations: 315)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 00:10:57 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 00:10:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:12:37 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 3.5ms | Allocations: 122)
+Completed 200 OK in 82ms (Views: 67.7ms | Allocations: 1083)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:18:34 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 20ms (Views: 5.5ms | Allocations: 310)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:19:35 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 24ms (Views: 14.2ms | Allocations: 309)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:19:37 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 17)
+Completed 200 OK in 13ms (Views: 3.8ms | Allocations: 308)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:20:05 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 14ms (Views: 4.1ms | Allocations: 309)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:21:04 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 29.9ms | Allocations: 142)
+Completed 200 OK in 132ms (Views: 107.3ms | Allocations: 1101)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 00:21:05 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 00:21:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 00:21:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:38:27 +0200
+  [1m[35m (31.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 48.4ms | Allocations: 337)
+Completed 200 OK in 450ms (Views: 242.9ms | ActiveRecord: 0.0ms | Allocations: 5082)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 00:38:30 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 00:38:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 00:38:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:41:19 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 766.2ms | Allocations: 137)
+Completed 200 OK in 870ms (Views: 855.6ms | ActiveRecord: 0.0ms | Allocations: 1059)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:41:59 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.5ms | Allocations: 179)
+Completed 200 OK in 78ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 1103)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:42:46 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 18)
+Completed 200 OK in 16ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:43:39 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 5.0ms | Allocations: 174)
+Completed 200 OK in 60ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 1093)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 00:45:01 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 5.1ms | Allocations: 217)
+Completed 200 OK in 73ms (Views: 57.0ms | Allocations: 1136)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:11:47 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 147.7ms | Allocations: 220)
+Completed 200 OK in 717ms (Views: 699.6ms | Allocations: 1139)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:18:18 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 32.6ms | Allocations: 219)
+Completed 200 OK in 222ms (Views: 193.5ms | Allocations: 1138)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:19:01 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 158.2ms | Allocations: 220)
+Completed 200 OK in 641ms (Views: 586.5ms | Allocations: 1139)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:19:40 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 136.0ms | Allocations: 219)
+Completed 200 OK in 357ms (Views: 332.5ms | Allocations: 1137)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:19:44 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 17)
+Completed 200 OK in 37ms (Views: 3.9ms | Allocations: 303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:20:22 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 13.2ms | Allocations: 219)
+Completed 200 OK in 182ms (Views: 149.3ms | Allocations: 1137)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:20:44 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 20.0ms | Allocations: 264)
+Completed 200 OK in 175ms (Views: 99.4ms | Allocations: 1182)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:21:32 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 164.6ms | Allocations: 274)
+Completed 200 OK in 285ms (Views: 240.8ms | Allocations: 1192)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:21:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:22:39 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 80.1ms | Allocations: 518)
+Completed 200 OK in 156ms (Views: 139.9ms | Allocations: 1437)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:23:56 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 69.5ms | Allocations: 230)
+Completed 200 OK in 117ms (Views: 102.6ms | Allocations: 1151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:24:46 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 296ms (Views: 4.6ms | Allocations: 303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:25:05 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 56ms (Views: 12.0ms | Allocations: 303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:26:38 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 93.8ms | Allocations: 253)
+Completed 200 OK in 258ms (Views: 243.1ms | Allocations: 1263)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:26:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:27:50 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 13.9ms | Allocations: 166)
+Completed 200 OK in 112ms (Views: 95.1ms | Allocations: 1085)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:28:01 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 13ms (Views: 4.0ms | Allocations: 303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:28:15 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 110.0ms | Allocations: 213)
+Completed 200 OK in 159ms (Views: 140.1ms | Allocations: 1131)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:28:29 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.8ms | Allocations: 164)
+Completed 200 OK in 72ms (Views: 51.9ms | Allocations: 1082)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:29:32 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 34.3ms | Allocations: 138)
+Completed 200 OK in 76ms (Views: 62.3ms | Allocations: 1056)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:29:33 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:29:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:30:33 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 15.7ms | Allocations: 144)
+Completed 200 OK in 56ms (Views: 41.1ms | Allocations: 1063)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:30:34 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:30:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:31:27 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.5ms | Allocations: 180)
+Completed 200 OK in 60ms (Views: 36.5ms | Allocations: 1099)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:31:27 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:31:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:37:34 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 28.6ms | Allocations: 194)
+Completed 200 OK in 113ms (Views: 95.6ms | Allocations: 1113)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:37:34 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:37:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:38:08 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.5ms | Allocations: 236)
+Completed 200 OK in 47ms (Views: 32.1ms | Allocations: 1155)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:38:08 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:38:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:38:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:39:05 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.1ms | Allocations: 181)
+Completed 200 OK in 83ms (Views: 65.1ms | Allocations: 1100)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:39:06 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:39:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:39:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:50:20 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 17)
+Completed 200 OK in 35ms (Views: 18.2ms | Allocations: 304)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:50:22 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:50:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:50:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:51:04 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 4.9ms | Allocations: 303)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:51:04 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:51:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:51:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:51:14 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.5ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 4.5ms | Allocations: 303)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:51:15 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:51:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:51:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:53:34 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 47.5ms | Allocations: 189)
+Completed 200 OK in 169ms (Views: 153.7ms | Allocations: 1107)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:53:34 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:53:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:53:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:53:50 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 3.9ms | Allocations: 193)
+Completed 200 OK in 45ms (Views: 30.1ms | Allocations: 1112)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:53:50 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:53:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 01:54:00 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 46.3ms | Allocations: 187)
+Completed 200 OK in 87ms (Views: 71.8ms | Allocations: 1106)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 01:54:01 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:54:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 01:54:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:00:31 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 98.9ms | Allocations: 159)
+Completed 200 OK in 278ms (Views: 262.9ms | Allocations: 1078)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:00:32 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:00:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:00:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:01:18 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 23.0ms | Allocations: 177)
+Completed 200 OK in 69ms (Views: 52.4ms | Allocations: 1096)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:01:18 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:01:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:01:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:01:48 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 15ms (Views: 3.7ms | Allocations: 304)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:01:49 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:01:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:01:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:03:11 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 17ms (Views: 4.2ms | Allocations: 303)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:03:12 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:03:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:04:21 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 35.5ms | Allocations: 175)
+Completed 200 OK in 159ms (Views: 144.8ms | Allocations: 1097)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:04:22 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:04:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:14:07 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 4.0ms | Allocations: 304)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:14:07 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:14:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:14:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:14:16 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 4.1ms | Allocations: 303)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:14:16 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:14:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:14:46 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 61.4ms | Allocations: 167)
+Completed 200 OK in 135ms (Views: 121.3ms | Allocations: 1086)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:14:47 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:14:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:15:16 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 3.3ms | Allocations: 167)
+Completed 200 OK in 68ms (Views: 53.2ms | Allocations: 1085)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:15:17 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:15:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:16:10 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.3ms | Allocations: 171)
+Completed 200 OK in 45ms (Views: 30.7ms | Allocations: 1090)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:16:11 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:16:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:16:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:16:56 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.6ms | Allocations: 193)
+Completed 200 OK in 62ms (Views: 40.9ms | Allocations: 1112)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:16:56 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:16:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:16:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:17:37 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.5ms | Allocations: 183)
+Completed 200 OK in 46ms (Views: 31.3ms | Allocations: 1102)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:17:37 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:17:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:17:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:18:20 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.4ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 5.5ms | Allocations: 304)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:18:21 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:18:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:19:20 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.1ms | Allocations: 197)
+Completed 200 OK in 45ms (Views: 31.3ms | Allocations: 1116)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:19:21 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:19:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:19:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:20:34 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 0.5ms | Allocations: 17)
+Completed 200 OK in 15ms (Views: 5.0ms | Allocations: 304)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:20:34 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:20:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:22:03 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 3.9ms | Allocations: 169)
+Completed 200 OK in 136ms (Views: 121.0ms | Allocations: 1087)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:22:04 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:22:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:24:17 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 5.2ms | Allocations: 193)
+Completed 200 OK in 54ms (Views: 39.5ms | Allocations: 1112)
+
+
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:24:17 +0200
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:24:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:25:58 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 3.9ms | Allocations: 207)
+Completed 200 OK in 82ms (Views: 68.4ms | Allocations: 1126)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:25:58 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:25:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-04 02:31:25 +0200
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb
+  Rendered chatroom/index.html.erb (Duration: 4.1ms | Allocations: 205)
+Completed 200 OK in 72ms (Views: 58.3ms | Allocations: 1124)
+
+
+Started GET "/semantic/dist/semantic.min.js" for 127.0.0.1 at 2022-04-04 02:31:26 +0200
+Started GET "/semantic/dist/semantic.min.css" for 127.0.0.1 at 2022-04-04 02:31:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/semantic/dist/semantic.min.css"):
+  
