@@ -1,0 +1,958 @@
+<div class="container">
+<%# proba %>
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Märzen</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Rauchbier</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Dunkles Bock</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      <h2>6A. Märzen</h2>
+      <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+      <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+  </section>
+    <section id="rauchbier" class="tab-panel">
+      <h2>6B. Rauchbier</h2>
+      <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
+      <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h2>6C. Dunkles Bock</h2>
+      <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+      <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
+    </section>
+  </div>
+  
+</div>
+
+<p><small>Source: <cite><a href="https://www.bjcp.org/stylecenter.php">BJCP Style Guidelines</a></cite></small></p>
+
+
+
+  <div class="row row-cols-auto justify-content-center">
+    <div class="warpper w-1 col">
+      <h2>Metres to</h2>
+      <input class="radio" id="oneM" name="group" type="radio" checked>
+      <input class="radio" id="twoM" name="group" type="radio">
+      <input class="radio" id="threeM" name="group" type="radio">
+      <input class="radio" id="fourM" name="group" type="radio">
+      <input class="radio" id="fiveM" name="group" type="radio">
+      <input class="radio" id="sixM" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneM-tab" for="oneM">Metres</label>
+      <label class="tab" id="twoM-tab" for="twoM">Inches</label>
+      <label class="tab" id="threeM-tab" for="threeM">Cm</label>
+      <label class="tab" id="fourM-tab" for="fourM">Yards</label>
+      <label class="tab" id="fiveM-tab" for="fiveM">Km</label>
+      <label class="tab" id="sixM-tab" for="sixM">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterMMtF(this.value)" onchange="LengthConverterMMtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputMMtF"></span></p>
+
+        <p> Feet to Metres <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterMFtM(this.value)" onchange="LengthConverterMFtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMFtM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterMMtI(this.value)" onchange="LengthConverterMMtI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputMMtI"></span></p>
+        </div>
+        <p> Inches to Metres <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterMItM(this.value)" onchange="LengthConverterMItM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMItM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterMMtC(this.value)" onchange="LengthConverterMMtC(this.value)">
+        <div>
+          <p>Cm: <span class="text-danger" id="outputMMtC"></span></p>
+        </div>
+        <p> Cm to Metres <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterMCtM(this.value)" onchange="LengthConverterMCtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMCtM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterMMtY(this.value)" onchange="LengthConverterMMtY(this.value)">
+        <div>
+          <p>Yards: <span class="text-danger" id="outputMMtY"></span></p>
+        </div>
+        <p> Yards to Metres <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Yards" oninput="LengthConverterMYtM(this.value)" onchange="LengthConverterMYtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMYtM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterMMtK(this.value)" onchange="LengthConverterMMtK(this.value)">
+        <div>
+          <p>Kilometres: <span class="text-danger" id="outputMMtK"></span></p>
+        </div>
+        <p> Km to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterMKtM(this.value)" onchange="LengthConverterMKtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMKtM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixM-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterMMtMi(this.value)" onchange="LengthConverterMMtMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputMMtMi"></span></p>
+        </div>
+        <p> Miles to Metres <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterMMitM(this.value)" onchange="LengthConverterMMitM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMMitM"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <%# 2 %>
+
+        <div class="warpper w-1 col">
+      <h2>Inches to</h2>
+      <input class="radio" id="oneI" name="group" type="radio" checked>
+      <input class="radio" id="twoI" name="group" type="radio">
+      <input class="radio" id="threeI" name="group" type="radio">
+      <input class="radio" id="fourI" name="group" type="radio">
+      <input class="radio" id="fiveI" name="group" type="radio">
+      <input class="radio" id="sixI" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneI-tab" for="oneI">Metres</label>
+      <label class="tab" id="twoI-tab" for="twoI">Feet</label>
+      <label class="tab" id="threeI-tab" for="threeI">Cm</label>
+      <label class="tab" id="fourI-tab" for="fourI">Yards</label>
+      <label class="tab" id="fiveI-tab" for="fiveI">Km</label>
+      <label class="tab" id="sixI-tab" for="sixI">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterIItM(this.value)" onchange="LengthConverterIItM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputIItM"></span></p>
+
+        <p> Metres to Inches <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Metres" oninput="LengthConverterIMtI(this.value)" onchange="LengthConverterIMtI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputIMtI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterIItF(this.value)" onchange="LengthConverterIItF(this.value)">
+        <div>
+          <p>Feet: <span class="text-danger" id="outputIItF"></span></p>
+        </div>
+        <p> Feet to Inches <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterIFtI(this.value)" onchange="LengthConverterIFtI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputIFtI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterIItC(this.value)" onchange="LengthConverterIItC(this.value)">
+        <div>
+          <p>Cm: <span class="text-danger" id="outputIItC"></span></p>
+        </div>
+        <p> Cm to Inches <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterICtI(this.value)" onchange="LengthConverterICtI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputICtI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterIItY(this.value)" onchange="LengthConverterIItY(this.value)">
+        <div>
+          <p>Yards: <span class="text-danger" id="outputIItY"></span></p>
+        </div>
+        <p> Yards to Inches <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Yards" oninput="LengthConverterIYtI(this.value)" onchange="LengthConverterIYtI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputIYtI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterIItK(this.value)" onchange="LengthConverterIItK(this.value)">
+        <div>
+          <p>Kilometres: <span class="text-danger" id="outputIItK"></span></p>
+        </div>
+        <p> Km to Inches <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterIKtI(this.value)" onchange="LengthConverterIKtI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputIKtI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixI-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterIItMi(this.value)" onchange="LengthConverterIItMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputIItMi"></span></p>
+        </div>
+        <p> Inches to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterIMitI(this.value)" onchange="LengthConverterIMitI(this.value)">
+        <p>Inches: <span class="text-danger" id="outputIMitI"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <%# 3 %>
+    <div class="warpper w-1 col">
+      <h2>Cm to</h2>
+      <input class="radio" id="oneC" name="group" type="radio" checked>
+      <input class="radio" id="twoC" name="group" type="radio">
+      <input class="radio" id="threeC" name="group" type="radio">
+      <input class="radio" id="fourC" name="group" type="radio">
+      <input class="radio" id="fiveC" name="group" type="radio">
+      <input class="radio" id="sixC" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneC-tab" for="oneC">Metres</label>
+      <label class="tab" id="twoC-tab" for="twoC">Feet</label>
+      <label class="tab" id="threeC-tab" for="threeC">Inches</label>
+      <label class="tab" id="fourC-tab" for="fourC">Yards</label>
+      <label class="tab" id="fiveC-tab" for="fiveC">Km</label>
+      <label class="tab" id="sixC-tab" for="sixC">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterCCtM(this.value)" onchange="LengthConverterCCtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputCCtM"></span></p>
+
+        <p> Metres to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Metres" oninput="LengthConverterCMtC(this.value)" onchange="LengthConverterCMtC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCMtC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Cm" oninput="LengthConverterCCtF(this.value)" onchange="LengthConverterCCtF(this.value)">
+        <div>
+          <p>Feet: <span class="text-danger" id="outputCCtF"></span></p>
+        </div>
+        <p> Feet to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterCFtC(this.value)" onchange="LengthConverterCFtC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCFtC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Cm" oninput="LengthConverterCCtI(this.value)" onchange="LengthConverterCCtI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputCCtI"></span></p>
+        </div>
+        <p> Inches to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterCItC(this.value)" onchange="LengthConverterCItC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCItC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Cm" oninput="LengthConverterCCtY(this.value)" onchange="LengthConverterCCtY(this.value)">
+        <div>
+          <p>Yards: <span class="text-danger" id="outputCCtY"></span></p>
+        </div>
+        <p> Yards to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Yards" oninput="LengthConverterCYtC(this.value)" onchange="LengthConverterCYtC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCYtC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Cm" oninput="LengthConverterCCtK(this.value)" onchange="LengthConverterCCtK(this.value)">
+        <div>
+          <p>Kilometres: <span class="text-danger" id="outputCCtK"></span></p>
+        </div>
+        <p> Km to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterCKtC(this.value)" onchange="LengthConverterCKtC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCKtC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixC-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Cm" oninput="LengthConverterCCtMi(this.value)" onchange="LengthConverterCCtMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputCCtMi"></span></p>
+        </div>
+        <p> Miles to Cm <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterCMitC(this.value)" onchange="LengthConverterCMitC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputCMitC"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <%# 4 %>
+    <div class="warpper w-1 col">
+      <h2>Yards to</h2>
+      <input class="radio" id="oneY" name="group" type="radio" checked>
+      <input class="radio" id="twoY" name="group" type="radio">
+      <input class="radio" id="threeY" name="group" type="radio">
+      <input class="radio" id="fourY" name="group" type="radio">
+      <input class="radio" id="fiveY" name="group" type="radio">
+      <input class="radio" id="sixY" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneY-tab" for="oneY">Metres</label>
+      <label class="tab" id="twoY-tab" for="twoY">Feet</label>
+      <label class="tab" id="threeY-tab" for="threeY">Inches</label>
+      <label class="tab" id="fourY-tab" for="fourY">Cm</label>
+      <label class="tab" id="fiveY-tab" for="fiveY">Km</label>
+      <label class="tab" id="sixY-tab" for="sixY">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Yards" oninput="LengthConverterYYtM(this.value)" onchange="LengthConverterYYtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputYYtM"></span></p>
+
+        <p> Metres to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Metres" oninput="LengthConverterYMtY(this.value)" onchange="LengthConverterYMtY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYMtY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Yards" oninput="LengthConverterYYtF(this.value)" onchange="LengthConverterYYtF(this.value)">
+        <div>
+          <p>Feet: <span class="text-danger" id="outputYYtF"></span></p>
+        </div>
+        <p> Feet to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterYFtY(this.value)" onchange="LengthConverterYFtY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYFtY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Yards" oninput="LengthConverterYYtI(this.value)" onchange="LengthConverterYYtI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputYYtI"></span></p>
+        </div>
+        <p> Inches to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterYItY(this.value)" onchange="LengthConverterYItY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYItY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Yards" oninput="LengthConverterYYtC(this.value)" onchange="LengthConverterYYtC(this.value)">
+        <div>
+          <p>Cm: <span class="text-danger" id="outputYYtC"></span></p>
+        </div>
+        <p> Cm to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterYCtY(this.value)" onchange="LengthConverterYCtY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYCtY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Yards" oninput="LengthConverterYYtK(this.value)" onchange="LengthConverterYYtK(this.value)">
+        <div>
+          <p>Kilometres: <span class="text-danger" id="outputYYtK"></span></p>
+        </div>
+        <p> Km to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterYKtY(this.value)" onchange="LengthConverterYKtY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYKtY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixY-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Yards" oninput="LengthConverterYYtMi(this.value)" onchange="LengthConverterYYtMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputYYtMi"></span></p>
+        </div>
+        <p> Miles to Yards <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterYMitY(this.value)" onchange="LengthConverterYMitY(this.value)">
+        <p>Yards: <span class="text-danger" id="outputYMitY"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <%# 5 %>
+    <div class="warpper w-1 col">
+      <h2>Km to</h2>
+      <input class="radio" id="oneK" name="group" type="radio" checked>
+      <input class="radio" id="twoK" name="group" type="radio">
+      <input class="radio" id="threeK" name="group" type="radio">
+      <input class="radio" id="fourK" name="group" type="radio">
+      <input class="radio" id="fiveK" name="group" type="radio">
+      <input class="radio" id="sixK" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneK-tab" for="oneK">Metres</label>
+      <label class="tab" id="twoK-tab" for="twoK">Feet</label>
+      <label class="tab" id="threeK-tab" for="threeK">Inches</label>
+      <label class="tab" id="fourK-tab" for="fourK">Cm</label>
+      <label class="tab" id="fiveK-tab" for="fiveK">Yards</label>
+      <label class="tab" id="sixK-tab" for="sixK">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterKKtM(this.value)" onchange="LengthConverterKKtM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputKKtM"></span></p>
+
+        <p> Metres to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Metres" oninput="LengthConverterKMtK(this.value)" onchange="LengthConverterKMtK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKMtK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Km" oninput="LengthConverterKKtF(this.value)" onchange="LengthConverterKKtF(this.value)">
+        <div>
+          <p>Feet: <span class="text-danger" id="outputKKtF"></span></p>
+        </div>
+        <p> Feet to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterKFtK(this.value)" onchange="LengthConverterKFtK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKFtK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Km" oninput="LengthConverterKKtI(this.value)" onchange="LengthConverterKKtI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputKKtI"></span></p>
+        </div>
+        <p> Inches to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterKItK(this.value)" onchange="LengthConverterKItK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKItK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Km" oninput="LengthConverterKKtC(this.value)" onchange="LengthConverterKKtC(this.value)">
+        <div>
+          <p>Cm: <span class="text-danger" id="outputKKtC"></span></p>
+        </div>
+        <p> Cm to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterKCtK(this.value)" onchange="LengthConverterKCtK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKCtK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Km" oninput="LengthConverterKKtY(this.value)" onchange="LengthConverterKKtY(this.value)">
+        <div>
+          <p>Yards: <span class="text-danger" id="outputKKtY"></span></p>
+        </div>
+        <p> Yards to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterKYtK(this.value)" onchange="LengthConverterKYtK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKYtK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixK-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Km" oninput="LengthConverterKKtMi(this.value)" onchange="LengthConverterKKtMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputKKtMi"></span></p>
+        </div>
+        <p> Miles to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterKMitK(this.value)" onchange="LengthConverterKMitK(this.value)">
+        <p>Km: <span class="text-danger" id="outputKMitK"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <%# 6 %>
+    <div class="warpper w-1 col">
+      <h2>Miles to</h2>
+      <input class="radio" id="oneMi" name="group" type="radio" checked>
+      <input class="radio" id="twoMi" name="group" type="radio">
+      <input class="radio" id="threeMi" name="group" type="radio">
+      <input class="radio" id="fourMi" name="group" type="radio">
+      <input class="radio" id="fiveMi" name="group" type="radio">
+      <input class="radio" id="sixMi" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneMi-tab" for="oneMi">Metres</label>
+      <label class="tab" id="twoMi-tab" for="twoMi">Feet</label>
+      <label class="tab" id="threeMi-tab" for="threeMi">Inches</label>
+      <label class="tab" id="fourMi-tab" for="fourMi">Cm</label>
+      <label class="tab" id="fiveMi-tab" for="fiveMi">Yards</label>
+      <label class="tab" id="sixMi-tab" for="sixMi">Km</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterMiMitM(this.value)" onchange="LengthConverterMiMitM(this.value)">
+        <p>Metres: <span class="text-danger" id="outputMiMitM"></span></p>
+
+        <p> Metres to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Metres" oninput="LengthConverterMiMtMi(this.value)" onchange="LengthConverterMiMtMi(this.value)">
+        <p>Miles: <span class="text-danger" id="outputMiMtMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterMiMitF(this.value)" onchange="LengthConverterMiMitF(this.value)">
+        <div>
+          <p>Feet: <span class="text-danger" id="outputMiMitF"></span></p>
+        </div>
+        <p> Feet to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Feet" oninput="LengthConverterMiFtMi(this.value)" onchange="LengthConverterMiFtMi(this.value)">
+        <p>Miles: <span class="text-danger" id="outputMiFtMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterMiMitI(this.value)" onchange="LengthConverterMiMitI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputMiMitI"></span></p>
+        </div>
+        <p> Inches to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterMiItMi(this.value)" onchange="LengthConverterMiItMi(this.value)">
+        <p>Miles: <span class="text-danger" id="outputMiItMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterMiMitC(this.value)" onchange="LengthConverterMiMitC(this.value)">
+        <div>
+          <p>Cm: <span class="text-danger" id="outputMiMitC"></span></p>
+        </div>
+        <p> Cm to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterMiCtMi(this.value)" onchange="LengthConverterMiCtMi(this.value)">
+        <p>Miles: <span class="text-danger" id="outputMiCtMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterMiMitY(this.value)" onchange="LengthConverterMiMitY(this.value)">
+        <div>
+          <p>Yards: <span class="text-danger" id="outputMiMitY"></span></p>
+        </div>
+        <p> Yards to Miles <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterMiYtMi(this.value)" onchange="LengthConverterMiYtMi(this.value)">
+        <p>Miles: <span class="text-danger" id="outputMiYtMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixMi-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterMiMitK(this.value)" onchange="LengthConverterMiMitK(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputMiMitK"></span></p>
+        </div>
+        <p> Miles to Km <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterMiKtMi(this.value)" onchange="LengthConverterMiKtMi(this.value)">
+        <p>Km: <span class="text-danger" id="outputMiKtMi"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<script>
+function LengthConverterMMtF(valNum) {
+  document.getElementById("outputMMtF").innerHTML=valNum*3.2808;
+}
+function LengthConverterMFtM(valNum) {
+  document.getElementById("outputMFtM").innerHTML=valNum/3.2808;
+}
+function LengthConverterMMtI(valNum) {
+  document.getElementById("outputMMtI").innerHTML=valNum*39.370;
+}
+function LengthConverterMItM(valNum) {
+  document.getElementById("outputMItM").innerHTML=valNum/39.370;
+}
+function LengthConverterMMtC(valNum) {
+  document.getElementById("outputMMtC").innerHTML=valNum/0.01;
+}
+function LengthConverterMCtM(valNum) {
+  document.getElementById("outputMCtM").innerHTML=valNum/100;
+}
+function LengthConverterMMtY(valNum) {
+  document.getElementById("outputMMtY").innerHTML=valNum*1.0936;
+}
+function LengthConverterMYtM(valNum) {
+  document.getElementById("outputMYtM").innerHTML=valNum/1.0936;
+}
+function LengthConverterMMtK(valNum) {
+  document.getElementById("outputMMtK").innerHTML=valNum/1000;
+}
+function LengthConverterMKtM(valNum) {
+  document.getElementById("outputMKtM").innerHTML=valNum*1000;
+}
+function LengthConverterMMtMi(valNum) {
+  document.getElementById("outputMMtMi").innerHTML=valNum*0.00062137;
+}
+function LengthConverterMMitM(valNum) {
+  document.getElementById("outputMMitM").innerHTML=valNum/0.00062137;
+}
+
+function LengthConverterIItM(valNum) {
+  document.getElementById("outputIItM").innerHTML=valNum/39.370;
+}
+function LengthConverterIMtI(valNum) {
+  document.getElementById("outputIMtI").innerHTML=valNum*39.370;
+}
+function LengthConverterIItF(valNum) {
+  document.getElementById("outputIItF").innerHTML=valNum*0.083333;
+}
+function LengthConverterIFtI(valNum) {
+  document.getElementById("outputIFtI").innerHTML=valNum*12;
+}
+function LengthConverterIItC(valNum) {
+  document.getElementById("outputIItC").innerHTML=valNum/0.39370;
+}
+function LengthConverterICtI(valNum) {
+  document.getElementById("outputICtI").innerHTML=valNum*0.39370;
+}
+function LengthConverterIItY(valNum) {
+  document.getElementById("outputIItY").innerHTML=valNum*0.027778;
+}
+function LengthConverterIYtI(valNum) {
+  document.getElementById("outputIYtI").innerHTML=valNum*36;
+}
+function LengthConverterIItK(valNum) {
+  document.getElementById("outputIItK").innerHTML=valNum/39370;
+}
+function LengthConverterIKtI(valNum) {
+  document.getElementById("outputIKtI").innerHTML=valNum*39370;
+}
+function LengthConverterIItMi(valNum) {
+  document.getElementById("outputIItMi").innerHTML=valNum*0.000015783;
+}
+function LengthConverterIMitI(valNum) {
+  document.getElementById("outputIMitI").innerHTML=valNum*63360;
+}
+
+function LengthConverterCCtM(valNum) {
+  document.getElementById("outputCCtM").innerHTML=valNum/100;
+}
+function LengthConverterCMtC(valNum) {
+  document.getElementById("outputCMtC").innerHTML=valNum/0.01;
+}
+function LengthConverterCCtF(valNum) {
+  document.getElementById("outputCCtF").innerHTML=valNum*0.032808;
+}
+function LengthConverterCFtC(valNum) {
+  document.getElementById("outputCFtC").innerHTML=valNum/0.032808;
+}
+function LengthConverterCCtI(valNum) {
+  document.getElementById("outputCCtI").innerHTML=valNum*0.39370;
+}
+function LengthConverterCItC(valNum) {
+  document.getElementById("outputCItC").innerHTML=valNum/0.39370;
+}
+function LengthConverterCCtY(valNum) {
+  document.getElementById("outputCCtY").innerHTML=valNum*0.010936;
+}
+function LengthConverterCYtC(valNum) {
+  document.getElementById("outputCYtC").innerHTML=valNum/0.010936;
+}
+function LengthConverterCCtK(valNum) {
+  document.getElementById("outputCCtK").innerHTML=valNum/100000;
+}
+function LengthConverterCKtC(valNum) {
+  document.getElementById("outputCKtC").innerHTML=valNum*100000;
+}
+function LengthConverterCCtMi(valNum) {
+  document.getElementById("outputCCtMi").innerHTML=valNum*0.0000062137;
+}
+function LengthConverterCMitC(valNum) {
+  document.getElementById("outputCMitC").innerHTML=valNum/0.0000062137;
+}
+
+function LengthConverterYYtM(valNum) {
+  document.getElementById("outputYYtM").innerHTML=valNum/1.0936;
+}
+function LengthConverterYMtY(valNum) {
+  document.getElementById("outputYMtY").innerHTML=valNum*1.0936;
+}
+function LengthConverterYYtF(valNum) {
+  document.getElementById("outputYYtF").innerHTML=valNum*3;
+}
+function LengthConverterYFtY(valNum) {
+  document.getElementById("outputYFtY").innerHTML=valNum*0.33333;
+}
+function LengthConverterYYtI(valNum) {
+  document.getElementById("outputYYtI").innerHTML=valNum*36;
+}
+function LengthConverterYItY(valNum) {
+  document.getElementById("outputYItY").innerHTML=valNum*0.027778;
+}
+function LengthConverterYYtC(valNum) {
+  document.getElementById("outputYYtC").innerHTML=valNum/0.010936;
+}
+function LengthConverterYCtY(valNum) {
+  document.getElementById("outputYCtY").innerHTML=valNum*0.010936;
+}
+function LengthConverterYYtK(valNum) {
+  document.getElementById("outputYYtK").innerHTML=valNum/1093.6;
+}
+function LengthConverterYKtY(valNum) {
+  document.getElementById("outputYKtY").innerHTML=valNum*1093.6;
+}
+function LengthConverterYYtMi(valNum) {
+  document.getElementById("outputYYtMi").innerHTML=valNum*0.00056818;
+}
+function LengthConverterYMitY(valNum) {
+  document.getElementById("outputYMitY").innerHTML=valNum*1760;
+}
+
+function LengthConverterKKtM(valNum) {
+  document.getElementById("outputKKtM").innerHTML=valNum*1000;
+}
+function LengthConverterKMtK(valNum) {
+  document.getElementById("outputKMtK").innerHTML=valNum/1000;
+}
+function LengthConverterKKtF(valNum) {
+  document.getElementById("outputKKtF").innerHTML=valNum*3280.8;
+}
+function LengthConverterKFtK(valNum) {
+  document.getElementById("outputKFtK").innerHTML=valNum/3280.8;
+}
+function LengthConverterKKtI(valNum) {
+  document.getElementById("outputKKtI").innerHTML=valNum*39370;
+}
+function LengthConverterKItK(valNum) {
+  document.getElementById("outputKItK").innerHTML=valNum/39370;
+}
+function LengthConverterKKtC(valNum) {
+  document.getElementById("outputKKtC").innerHTML=valNum*100000;
+}
+function LengthConverterKCtK(valNum) {
+  document.getElementById("outputKCtK").innerHTML=valNum/100000;
+}
+function LengthConverterKKtY(valNum) {
+  document.getElementById("outputKKtY").innerHTML=valNum*1093.6;
+}
+function LengthConverterKYtK(valNum) {
+  document.getElementById("outputKYtK").innerHTML=valNum/1093.6;
+}
+function LengthConverterKKtMi(valNum) {
+  document.getElementById("outputKKtMi").innerHTML=valNum*0.62137;
+}
+function LengthConverterKMitK(valNum) {
+  document.getElementById("outputKMitK").innerHTML=valNum/0.62137;
+}
+
+function LengthConverterMiMitM(valNum) {
+  document.getElementById("outputMiMitM").innerHTML=valNum/0.00062137;
+}
+function LengthConverterMiMtMi(valNum) {
+  document.getElementById("outputMiMtMi").innerHTML=valNum*0.00062137;
+}
+function LengthConverterMiMitF(valNum) {
+  document.getElementById("outputMiMitF").innerHTML=valNum*5280;
+}
+function LengthConverterMiFtMi(valNum) {
+  document.getElementById("outputMiFtMi").innerHTML=valNum*0.00018939;
+}
+function LengthConverterMiMitI(valNum) {
+  document.getElementById("outputMiMitI").innerHTML=valNum*63360;
+}
+function LengthConverterMiItMi(valNum) {
+  document.getElementById("outputMiItMi").innerHTML=valNum*0.000015783;
+}
+function LengthConverterMiMitC(valNum) {
+  document.getElementById("outputMiMitC").innerHTML=valNum/0.0000062137;
+}
+function LengthConverterMiCtMi(valNum) {
+  document.getElementById("outputMiCtMi").innerHTML=valNum*0.0000062137;
+}
+function LengthConverterMiMitY(valNum) {
+  document.getElementById("outputMiMitY").innerHTML=valNum*1760;
+}
+function LengthConverterMiYtMi(valNum) {
+  document.getElementById("outputMiYtMi").innerHTML=valNum*0.00056818;
+}
+function LengthConverterMiMitK(valNum) {
+  document.getElementById("outputMiMitK").innerHTML=valNum/0.62137;
+}
+function LengthConverterMiKtMi(valNum) {
+  document.getElementById("outputMiKtMi").innerHTML=valNum*0.62137;
+}
+</script>
+

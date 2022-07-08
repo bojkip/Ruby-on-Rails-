@@ -1,0 +1,1283 @@
+<div class="container pt-3 pb-5">
+
+
+<%# Tabs TT %>
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" class="tabinp1" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label class="tablab1" for="tab1">Length</label>
+  <!-- Tab 2 -->
+  <input class="tabinp2" type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label class="tablab2" for="tab2">Temperature</label>
+  <!-- Tab 3 -->
+  <input class="tabinp3" type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label class="tablab3" for="tab3">Weight</label>
+  <!-- Tab 4 -->
+  <input class="tabinp4" type="radio" name="tabset" id="tab4" aria-controls="dunkles">
+  <label class="tablab4" for="tab4">Speed</label>
+  <!-- Tab 5 -->
+  <input class="tabinp5" type="radio" name="tabset" id="tab5" aria-controls="dunkles">
+  <label class="tablab5" for="tab5">Proba</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+          <h2>Length</h2>
+          <div class="position-relative">
+            <div class="position-absolute bottom-0 end-0 end-0 btnl1"><button type="button" class="btn btn-outline-dark btnl1">Read more</button></div>
+          </div>
+      <div class="row gx-4">
+        <div class="col-6">
+        <label class="l-title lt1">Meter</label>
+        <input id="inputMeterL" class="w3-input w3-border form-control fc1" type="number" placeholder="Meter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Kilometer</label>
+        <input id="inputKilometerL" class="w3-input w3-border form-control fc1" type="number" placeholder="Kilometer" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Decimeter</label>
+        <input id="inputDecimeterL" class="w3-input w3-border form-control fc1" type="number" placeholder="Decimeter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Centimeter</label>
+        <input id="inputCentimeterL" class="w3-input w3-border form-control fc1" type="number" placeholder="Centimeter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Milimeter</label>
+        <input id="inputMilimeterL" class="w3-input w3-border form-control fc1" type="number" placeholder="Milimeter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Foot</label>
+        <input id="inputFootL" class="w3-input w3-border form-control fc1" type="number" placeholder="Foot" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="col-6">
+          <label class="l-title lt1">Micrometer</label>
+        <input id="inputMicrometerL" class="w3-input w3-border form-control fc1" type="number" placeholder="Micrometer" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Nanometer</label>
+        <input id="inputNanometerL" class="w3-input w3-border form-control fc1" type="number" placeholder="Nanometer" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Miles</label>
+        <input id="inputMilesL" class="w3-input w3-border form-control fc1" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Yards</label>
+        <input id="inputYardsL" class="w3-input w3-border form-control fc1" type="number" placeholder="Yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title lt1">Inch</label>
+        <input id="inputInchL" class="w3-input w3-border form-control fc1" type="number" placeholder="Inch" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+      </div>
+  </section>
+    <section id="rauchbier" class="tab-panel">
+    <h2>Temperature</h2>
+    <div class="row gx-4">
+      <div class="col-12">
+        <label class="l-title">Fahrenheit</label>
+        <input id="inputFahrenheit" class="w3-input w3-border form-control fc2" type="number" min="-459.66999999999996" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+        <label class="l-title">Celsius</label>
+        <input id="inputCelsius" class="w3-input w3-border form-control fc2" type="number" min="-273.15" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+        <label class="l-title">Kelvin</label>
+        <input id="inputKelvin" class="w3-input w3-border form-control fc2" type="number" min="0" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+      </div>
+    </div>
+    </section>
+    <section id="dunkles" class="tab-panel">
+    <h2>Weight</h2>
+    <div class="row gx-4">
+      <div class="col-6">
+        <label class="l-title">Pounds</label>
+        <input id="inputPounds" class="w3-input w3-border form-control fc3" type="number" placeholder="Pounds" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Kilograms</label>
+        <input id="inputKilograms" class="w3-input w3-border form-control fc3" type="number" placeholder="Kilograms" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Ounces</label>
+        <input id="inputOunces" class="w3-input w3-border form-control fc3" type="number" placeholder="Ounces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+      </div>
+      <div class="col-6">
+        <label class="l-title">Grams</label>
+        <input id="inputGrams" class="w3-input w3-border form-control fc3" type="number" placeholder="Grams" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Stones</label>
+        <input id="inputStones" class="w3-input w3-border form-control fc3" type="number" placeholder="Stones" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+      </div>
+    </section>
+
+    <section id="marzen" class="tab-panel">
+      <h2>Speed</h2>
+    <div class="row gx-4">
+      <div class="col-6">
+        <label class="l-title">MPH</label>
+        <input id="inputMPH" class="w3-input w3-border form-control fc4" type="number" placeholder="MPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+        <label class="l-title">KPH</label>
+        <input id="inputKPH" class="w3-input w3-border form-control fc4" type="number" placeholder="KPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+      </div>
+      <div class="col-6">
+        <label class="l-title">Knots</label>
+        <input id="inputKnots" class="w3-input w3-border form-control fc4" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+        <label class="l-title">Mach</label>
+        <input id="inputMach" class="w3-input w3-border form-control fc4" type="number" placeholder="Mach" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+      </div>
+    </div>
+  </section>
+
+  <section id="marzen" class="tab-panel">
+      <h2>Km</h2>
+    <div class="row gx-4">
+      <div class="col-6">
+        <label class="l-title">Feet</label>
+        <input id="inputFeett" class="w3-input w3-border form-control fc4" type="number" placeholder="MPH" oninput="kmConverter(this.id,this.value)" onchange="kmConverter(this.id,this.value)">
+        <label class="l-title">Metres</label>
+        <input id="inputMeterss" class="w3-input w3-border form-control fc4" type="number" placeholder="KPH" oninput="kmConverter(this.id,this.value)" onchange="kmConverter(this.id,this.value)">
+      </div>
+      <div class="col-6">
+        <label class="l-title">Km</label>
+        <input id="inputKmm" class="w3-input w3-border form-control fc4" type="number" placeholder="Knots" oninput="kmConverter(this.id,this.value)" onchange="kmConverter(this.id,this.value)">
+        <label class="l-title">Mach</label>
+        <input id="nn" class="w3-input w3-border form-control fc4" type="number" placeholder="Mach" oninput="kmConverter(this.id,this.value)" onchange="kmConverter(this.id,this.value)">
+      </div>
+    </div>
+  </section>
+  
+  </div>
+  
+</div>
+
+
+<div class="row row-cols-auto justify-content-center">
+    <%# proba 1 %>
+    <%# <div class="w3-row-padding" style="margin:0 -16px">
+  <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between Length measurements:</p>
+  <div class="w3-half w3-margin-top">
+    <label>Feet</label>
+    <input id="inputFeet" class="w3-input w3-border" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Meters</label>
+    <input id="inputMeters" class="w3-input w3-border" type="number" placeholder="Meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Inches</label>
+    <input id="inputInches" class="w3-input w3-border" type="number" placeholder="Inches" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>cm</label>
+    <input id="inputcm" class="w3-input w3-border" type="number" placeholder="cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Yards</label>
+    <input id="inputYards" class="w3-input w3-border" type="number" placeholder="Yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Kilometers</label>
+    <input id="inputKilometers" class="w3-input w3-border" type="number" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+  <div class="w3-half w3-margin-top">
+    <label>Miles</label>
+    <input id="inputMiles" class="w3-input w3-border" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  </div>
+</div> %>
+    
+    
+    
+    
+    <%# proba 2 %>
+    <div class="warpper col">
+      <h2>Feet to</h2>
+      <input class="radio" id="oneF" name="group" type="radio" checked>
+      <input class="radio" id="twoF" name="group" type="radio">
+      <input class="radio" id="threeF" name="group" type="radio">
+      <input class="radio" id="fourF" name="group" type="radio">
+      <input class="radio" id="fiveF" name="group" type="radio">
+      <input class="radio" id="sixF" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneF-tab" for="oneF">Length </label>
+      <label class="tab" id="twoF-tab" for="twoF">Temperature</label>
+      <label class="tab tabW" id="threeF-tab" for="threeF">Weight</label>
+      <label class="tab" id="fourF-tab" for="fourF">Speed</label>
+      <label class="tab" id="fiveF-tab" for="fiveF">Km</label>
+      <label class="tab" id="sixF-tab" for="sixF">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneF-panel">
+      <label class="l-title">Feet</label>
+        <input id="inputFeet" class="w3-input w3-border form-control" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Metres</label>
+        <input id="inputMeters" class="w3-input w3-border form-control" type="number" placeholder="Meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Inches</label>
+        <input id="inputInches" class="w3-input w3-border form-control" type="number" placeholder="Inches" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Cm</label>
+        <input id="inputcm" class="w3-input w3-border form-control" type="number" placeholder="cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Yards</label>
+        <input id="inputYards" class="w3-input w3-border form-control" type="number" placeholder="Yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Kilometers</label>
+        <input id="inputKilometers" class="w3-input w3-border form-control" type="number" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        <label class="l-title">Miles</label>
+        <input id="inputMiles" class="w3-input w3-border form-control" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+
+
+
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoF-panel">
+          <label class="l-title">Fahrenheit</label>
+          <input id="inputFahrenheit" class="w3-input w3-border form-control" type="number" min="-459.66999999999996" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+          <label class="l-title">Celsius</label>
+          <input id="inputCelsius" class="w3-input w3-border form-control" type="number" min="-273.15" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+          <label class="l-title">Kelvin</label>
+          <input id="inputKelvin" class="w3-input w3-border form-control" type="number" min="0" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+      </div>
+
+      <div class="panel p-F3" id="threeF-panel">
+        <label class="l-title">Pounds</label>
+        <input id="inputPounds" class="w3-input w3-border form-control" type="number" placeholder="Pounds" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Kilograms</label>
+        <input id="inputKilograms" class="w3-input w3-border form-control" type="number" placeholder="Kilograms" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Ounces</label>
+        <input id="inputOunces" class="w3-input w3-border form-control" type="number" placeholder="Ounces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Grams</label>
+        <input id="inputGrams" class="w3-input w3-border form-control" type="number" placeholder="Grams" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        <label class="l-title">Stones</label>
+        <input id="inputStones" class="w3-input w3-border form-control" type="number" placeholder="Stones" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+      </div>
+
+      <div class="panel" id="fourF-panel">
+        <label class="l-title">MPH</label>
+        <input id="inputMPH" class="w3-input w3-border form-control" type="number" placeholder="MPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+        <label class="l-title">KPH</label>
+        <input id="inputKPH" class="w3-input w3-border form-control" type="number" placeholder="KPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+        <label class="l-title">Knots</label>
+        <input id="inputKnots" class="w3-input w3-border form-control" type="number" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+        <label class="l-title">Mach</label>
+        <input id="inputMach" class="w3-input w3-border form-control" type="number" placeholder="Mach" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+      </div>
+
+      <div class="panel" id="fiveF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterFFtK(this.value)" onchange="LengthConverterFFtK(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputFFtK"></span></p>
+        </div>
+        <p> Km to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterFKtF(this.value)" onchange="LengthConverterFKtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputFKtF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterFFtMi(this.value)" onchange="LengthConverterFFtMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputFFtMi"></span></p>
+        </div>
+        <p> Miles to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterFMitF(this.value)" onchange="LengthConverterFMitF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputFMitF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  <%# Tabs %>
+    <%# <div class="warpper w-1 col">
+      <h2>Feet to</h2>
+      <input class="radio" id="oneF" name="group" type="radio" checked>
+      <input class="radio" id="twoF" name="group" type="radio">
+      <input class="radio" id="threeF" name="group" type="radio">
+      <input class="radio" id="fourF" name="group" type="radio">
+      <input class="radio" id="fiveF" name="group" type="radio">
+      <input class="radio" id="sixF" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneF-tab" for="oneF">Metres</label>
+      <label class="tab" id="twoF-tab" for="twoF">Inches</label>
+      <label class="tab" id="threeF-tab" for="threeF">Cm</label>
+      <label class="tab" id="fourF-tab" for="fourF">Yards</label>
+      <label class="tab" id="fiveF-tab" for="fiveF">Km</label>
+      <label class="tab" id="sixF-tab" for="sixF">Miles</label>
+    </div> %>
+      <div class="panels ps-1">
+      <div class="panel" id="oneF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputMeters"></span></p>
+        </div>
+        <p> Meters to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverterF(this.value)" onchange="LengthConverterF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputFeet"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="twoF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterI(this.value)" onchange="LengthConverterI(this.value)">
+        <div>
+          <p>Inches: <span class="text-danger" id="outputInches"></span></p>
+        </div>
+        <p> Inches to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Inches" oninput="LengthConverterItF(this.value)" onchange="LengthConverterItF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputItF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterC(this.value)" onchange="LengthConverterC(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputcm"></span></p>
+        </div>
+        <p> Cm to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Cm" oninput="LengthConverterCtF(this.value)" onchange="LengthConverterCtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputCtF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterY(this.value)" onchange="LengthConverterY(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputYards"></span></p>
+        </div>
+        <p> Yards to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Yards" oninput="LengthConverterYtF(this.value)" onchange="LengthConverterYtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputYtF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterK(this.value)" onchange="LengthConverterK(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputKilometers"></span></p>
+        </div>
+        <p> Km to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Km" oninput="LengthConverterKtF(this.value)" onchange="LengthConverterKtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputKtF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterMi(this.value)" onchange="LengthConverterMi(this.value)">
+        <div>
+          <p>Miles: <span class="text-danger" id="outputMiles"></span></p>
+        </div>
+        <p> Miles to Feet <p>
+        <input class="form-control" id="inputMeters" type="number" placeholder="Miles" oninput="LengthConverterMtF(this.value)" onchange="LengthConverterMtF(this.value)">
+        <p>Feet: <span class="text-danger" id="outputMtF"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <%# 2 %>
+
+    <div class="warpper w-2 col">
+      <h2>Temperature</h2>
+      <input class="radio" id="oneFa" name="group" type="radio" checked>
+      <input class="radio" id="twoCe" name="group" type="radio">
+      <input class="radio" id="threeKe" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneFa-tab" for="oneFa">Fahrenheit</label>
+      <label class="tab" id="twoCe-tab" for="twoCe">Celcius</label>
+      <label class="tab" id="threeKe-tab" for="threeKe">Kelvin</label>
+    </div>
+      <div class="panels ps-2">
+      <div class="panel" id="oneFa-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverterFtC(this.value)" onchange="temperatureConverterFtC(this.value)">
+        <p>Celcius: <span class="text-danger" id="outputCelcius"></span></p>
+        <h5> Fahrenheit to Kelvin</h5>
+        <input class="form-control" id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverterFtK(this.value)" onchange="temperatureConverterFtK(this.value)">
+      <p>Kelvin: <span class="text-danger" id="outputKelvinFtK"></span></p>
+      </div>
+
+      <div class="panel" id="twoCe-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCtF(this.value)" onchange="temperatureConverterCtF(this.value)">
+        <p>Fahrenheit: <span class="text-danger" id="outputFahrenheit"></span></p>
+        <h5>Celcius to Kelvin</h5>
+        <input class="form-control" id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCtK(this.value)" onchange="temperatureConverterCtK(this.value)">
+        <p>Kelvin: <span class="text-danger" id="outputKelvinCtK"></span></p>
+      </div>
+
+      <div class="panel" id="threeKe-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverterKtF(this.value)" onchange="temperatureConverterKtF(this.value)">
+        <p>Fahrenheit: <span class="text-danger" id="outputFahrenheitKtF"></span></p>
+        <h5>Kelvin to Celcius</h5>
+        <input class="form-control" id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverterKtC(this.value)" onchange="temperatureConverterKtC(this.value)">
+        <p>Celcius: <span class="text-danger" id="outputCelciusKtC"></span></p>
+      </div>
+
+      </div>
+
+    </div>
+
+
+    <%# 3 %>
+
+    <div class="warpper w-1 col">
+      <h2>Feet to</h2>
+      <input class="radio" id="oneF" name="group" type="radio" checked>
+      <input class="radio" id="twoF" name="group" type="radio">
+      <input class="radio" id="threeF" name="group" type="radio">
+      <input class="radio" id="fourF" name="group" type="radio">
+      <input class="radio" id="fiveF" name="group" type="radio">
+      <input class="radio" id="sixF" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneF-tab" for="oneF">Metres</label>
+      <label class="tab" id="twoF-tab" for="twoF">Inches</label>
+      <label class="tab" id="threeF-tab" for="threeF">Cm</label>
+      <label class="tab" id="fourF-tab" for="fourF">Yards</label>
+      <label class="tab" id="fiveF-tab" for="fiveF">Km</label>
+      <label class="tab" id="sixF-tab" for="sixF">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneF-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputMeters"></span></p>
+        </div>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      <div class="panel" id="twoF-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterI(this.value)" onchange="LengthConverterI(this.value)">
+      <p>Inches: <span class="text-danger" id="outputInches"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Inches to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeF-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterC(this.value)" onchange="LengthConverterC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputcm"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6"><span>Cm to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourF-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterY(this.value)" onchange="LengthConverterY(this.value)">
+      <p>Inches: <span class="text-danger" id="outputYards"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Inches to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveF-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterK(this.value)" onchange="LengthConverterK(this.value)">
+      <p>Km: <span class="text-danger" id="outputKilometers"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Km to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixF-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterMl(this.value)" onchange="LengthConverterMl(this.value)">
+      <p>Miles: <span class="text-danger" id="outputMiles"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Miles to Feet</span></button>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+
+    <%# 4 %>
+
+
+    <div class="warpper w-1 col">
+      <h2>Feet to</h2>
+      <input class="radio" id="oneS" name="group" type="radio" checked>
+      <input class="radio" id="twoS" name="group" type="radio">
+      <input class="radio" id="threeS" name="group" type="radio">
+      <input class="radio" id="fourS" name="group" type="radio">
+      <input class="radio" id="fiveS" name="group" type="radio">
+      <input class="radio" id="sixS" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="oneS-tab" for="oneS">Metres</label>
+      <label class="tab" id="twoS-tab" for="twoS">Inches</label>
+      <label class="tab" id="threeS-tab" for="threeS">Cm</label>
+      <label class="tab" id="fourS-tab" for="fourS">Yards</label>
+      <label class="tab" id="fiveS-tab" for="fiveS">Km</label>
+      <label class="tab" id="sixS-tab" for="sixS">Miles</label>
+    </div>
+      <div class="panels ps-1">
+      <div class="panel" id="oneS-panel">
+        <div class="panel-title">Why Learn CSS?</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+        <div>
+          <p>Meters: <span class="text-danger" id="outputMeters"></span></p>
+        </div>
+        <div class="text-center">
+          <button class="custom-btn btn-6">
+          <span><%= link_to "Metres to Feet", categories_metres_path, class: "custom-btn btn-6" %></span>
+          </button>
+        </div>
+      </div>
+      <div class="panel" id="twoS-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterI(this.value)" onchange="LengthConverterI(this.value)">
+      <p>Inches: <span class="text-danger" id="outputInches"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Inches to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="threeS-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterC(this.value)" onchange="LengthConverterC(this.value)">
+        <p>Cm: <span class="text-danger" id="outputcm"></span></p>
+        <div class="text-center">
+          <button class="custom-btn btn-6"><span>Cm to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="fourS-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterY(this.value)" onchange="LengthConverterY(this.value)">
+      <p>Inches: <span class="text-danger" id="outputYards"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Inches to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="fiveS-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterK(this.value)" onchange="LengthConverterK(this.value)">
+      <p>Km: <span class="text-danger" id="outputKilometers"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Km to Feet</span></button>
+        </div>
+      </div>
+
+      <div class="panel" id="sixS-panel">
+        <div class="panel-title">Take-Away Skills</div>
+        <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterMl(this.value)" onchange="LengthConverterMl(this.value)">
+      <p>Miles: <span class="text-danger" id="outputMiles"></span></p>
+      <div class="text-center">
+          <button class="custom-btn btn-6"><span>Miles to Feet</span></button>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<%# <h2>Feet to</h2>
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio">
+  <input class="radio" id="five" name="group" type="radio">
+  <input class="radio" id="six" name="group" type="radio">
+  <div class="tabs">
+  <label class="tab" id="one-tab" for="one">Metres</label>
+  <label class="tab" id="two-tab" for="two">Inches</label>
+  <label class="tab" id="three-tab" for="three">Cm</label>
+  <label class="tab" id="four-tab" for="four">Yards</label>
+  <label class="tab" id="five-tab" for="five">Km</label>
+  <label class="tab" id="six-tab" for="six">Miles</label>
+</div>
+  <div class="panels">
+  <div class="panel" id="one-panel">
+    <div class="panel-title">Why Learn CSS?</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+    <div>
+      <p>Meters: <span class="text-danger" id="outputMeters"></span></p>
+    </div>
+  </div>
+  <div class="panel" id="two-panel">
+    <div class="panel-title">Take-Away Skills</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterI(this.value)" onchange="LengthConverterI(this.value)">
+</p>
+<p>Cm: <span class="text-danger" id="outputInches"></span></p>
+  </div>
+
+  <div class="panel" id="three-panel">
+    <div class="panel-title">Take-Away Skills</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterC(this.value)" onchange="LengthConverterC(this.value)">
+</p>
+<p>Inches: <span class="text-danger" id="outputcm"></span></p>
+  </div>
+
+  <div class="panel" id="four-panel">
+    <div class="panel-title">Take-Away Skills</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterY(this.value)" onchange="LengthConverterY(this.value)">
+</p>
+<p>Inches: <span class="text-danger" id="outputYards"></span></p>
+  </div>
+
+  <div class="panel" id="five-panel">
+    <div class="panel-title">Take-Away Skills</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterK(this.value)" onchange="LengthConverterK(this.value)">
+</p>
+<p>Km: <span class="text-danger" id="outputKilometers"></span></p>
+  </div>
+
+  <div class="panel" id="six-panel">
+    <div class="panel-title">Take-Away Skills</div>
+    <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+</p>
+<p>Miles: <span class="text-danger" id="outputMiles"></span></p>
+  </div>
+
+
+
+    <div class="panel-title">Note on Prerequisites</div>
+      <p>We recommend that you complete Learn HTML before learning CSS.</p>
+  </div>
+  </div>
+</div>
+
+
+<div class="row ms-1">
+  <div class="col-sm-3">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Primary card title</h5>
+        <form class="form-inline">
+          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+            <option selected>Choose...</option>
+            <option value="1" id="inputFeet" onchange="myFunction()">Miles</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+
+            <input class="form-control" id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverterM(this.value)" onchange="LengthConverterM(this.value)">
+            </p>
+            <p>Miles: <span class="text-danger" id="outputMiles"></span></p>
+          </select>
+        </form>
+        
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button class="btn btn-primary ">
+          <%= link_to "Metres", categories_metres_path //
+        </button>
+      </div>
+    </div>
+  </div>
+</div>  %>
+
+
+
+
+
+<%# <p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p> %>
+
+<%# proba %>
+<script>
+function LengthConverterFFtM(valNum) {
+  document.getElementById("outputFFtM").innerHTML=valNum/3.2808;
+}
+function LengthConverterFFtI(valNum) {
+  document.getElementById("outputFFtI").innerHTML=valNum*12;
+}
+function LengthConverterFFtC(valNum) {
+  document.getElementById("outputFFtC").innerHTML=valNum/0.032808;
+}
+function LengthConverterFFtY(valNum) {
+  document.getElementById("outputFFtY").innerHTML=valNum*0.33333;
+}
+function LengthConverterFFtK(valNum) {
+  document.getElementById("outputFFtK").innerHTML=valNum/3280.8;
+}
+function LengthConverterFFtMi(valNum) {
+  document.getElementById("outputFFtMi").innerHTML=valNum*0.00018939;
+}
+
+  function LengthConverterFMtF(valNum) {
+  document.getElementById("outputFMtF").innerHTML=valNum*3.2808;
+}
+function LengthConverterFItF(valNum) {
+  document.getElementById("outputFItF").innerHTML=valNum*0.083333;
+}
+function LengthConverterFCtF(valNum) {
+  document.getElementById("outputFCtF").innerHTML=valNum*0.032808;
+}
+function LengthConverterFYtF(valNum) {
+  document.getElementById("outputFYtF").innerHTML=valNum*3;
+}
+function LengthConverterFKtF(valNum) {
+  document.getElementById("outputFKtF").innerHTML=valNum*3280.8;
+}
+function LengthConverterFMitF(valNum) {
+  document.getElementById("outputFMitF").innerHTML=valNum*5280;
+}
+
+
+function temperatureConverterFtC(valNum) {   
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+function temperatureConverterCtF(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+function temperatureConverterFtK(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvinFtK").innerHTML=((valNum-32)/1.8)+273.15;
+}
+function temperatureConverterCtK(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvinCtK").innerHTML=valNum+273.15;
+}
+function temperatureConverterKtF(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheitKtF").innerHTML=((valNum-273.15)*1.8)+32;
+}
+function temperatureConverterKtC(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelciusKtC").innerHTML=valNum-273.15;
+}
+
+
+function LengthConverterMMtF(valNum) {
+  document.getElementById("outputMMtF").innerHTML=valNum*3.2808;
+}
+function LengthConverterMFtM(valNum) {
+  document.getElementById("outputMFtM").innerHTML=valNum/3.2808;
+}
+function LengthConverterMMtI(valNum) {
+  document.getElementById("outputMMtI").innerHTML=valNum*39.370;
+}
+function LengthConverterMItM(valNum) {
+  document.getElementById("outputMItM").innerHTML=valNum/39.370;
+}
+function LengthConverterMMtC(valNum) {
+  document.getElementById("outputMMtC").innerHTML=valNum/0.01;
+}
+function LengthConverterMCtM(valNum) {
+  document.getElementById("outputMCtM").innerHTML=valNum/100;
+}
+function LengthConverterMMtY(valNum) {
+  document.getElementById("outputMMtY").innerHTML=valNum*1.0936;
+}
+function LengthConverterMYtM(valNum) {
+  document.getElementById("outputMYtM").innerHTML=valNum/1.0936;
+}
+function LengthConverterMMtK(valNum) {
+  document.getElementById("outputMMtK").innerHTML=valNum/1000;
+}
+function LengthConverterMKtM(valNum) {
+  document.getElementById("outputMKtM").innerHTML=valNum*1000;
+}
+function LengthConverterMMtMi(valNum) {
+  document.getElementById("outputMMtMi").innerHTML=valNum*0.00062137;
+}
+function LengthConverterMMitM(valNum) {
+  document.getElementById("outputMMitM").innerHTML=valNum/0.00062137;
+}
+
+function LengthConverterIItM(valNum) {
+  document.getElementById("outputIItM").innerHTML=valNum/39.370;
+}
+function LengthConverterIMtI(valNum) {
+  document.getElementById("outputIMtI").innerHTML=valNum*39.370;
+}
+function LengthConverterIItF(valNum) {
+  document.getElementById("outputIItF").innerHTML=valNum*0.083333;
+}
+function LengthConverterIFtI(valNum) {
+  document.getElementById("outputIFtI").innerHTML=valNum*12;
+}
+function LengthConverterIItC(valNum) {
+  document.getElementById("outputIItC").innerHTML=valNum/0.39370;
+}
+function LengthConverterICtI(valNum) {
+  document.getElementById("outputICtI").innerHTML=valNum*0.39370;
+}
+function LengthConverterIItY(valNum) {
+  document.getElementById("outputIItY").innerHTML=valNum*0.027778;
+}
+function LengthConverterIYtI(valNum) {
+  document.getElementById("outputIYtI").innerHTML=valNum*36;
+}
+function LengthConverterIItK(valNum) {
+  document.getElementById("outputIItK").innerHTML=valNum/39370;
+}
+function LengthConverterIKtI(valNum) {
+  document.getElementById("outputIKtI").innerHTML=valNum*39370;
+}
+function LengthConverterIItMi(valNum) {
+  document.getElementById("outputIItMi").innerHTML=valNum*0.000015783;
+}
+function LengthConverterIMitI(valNum) {
+  document.getElementById("outputIMitI").innerHTML=valNum*63360;
+}
+
+function LengthConverterCCtM(valNum) {
+  document.getElementById("outputCCtM").innerHTML=valNum/100;
+}
+function LengthConverterCMtC(valNum) {
+  document.getElementById("outputCMtC").innerHTML=valNum/0.01;
+}
+function LengthConverterCCtF(valNum) {
+  document.getElementById("outputCCtF").innerHTML=valNum*0.032808;
+}
+function LengthConverterCFtC(valNum) {
+  document.getElementById("outputCFtC").innerHTML=valNum/0.032808;
+}
+function LengthConverterCCtI(valNum) {
+  document.getElementById("outputCCtI").innerHTML=valNum*0.39370;
+}
+function LengthConverterCItC(valNum) {
+  document.getElementById("outputCItC").innerHTML=valNum/0.39370;
+}
+function LengthConverterCCtY(valNum) {
+  document.getElementById("outputCCtY").innerHTML=valNum*0.010936;
+}
+function LengthConverterCYtC(valNum) {
+  document.getElementById("outputCYtC").innerHTML=valNum/0.010936;
+}
+function LengthConverterCCtK(valNum) {
+  document.getElementById("outputCCtK").innerHTML=valNum/100000;
+}
+function LengthConverterCKtC(valNum) {
+  document.getElementById("outputCKtC").innerHTML=valNum*100000;
+}
+function LengthConverterCCtMi(valNum) {
+  document.getElementById("outputCCtMi").innerHTML=valNum*0.0000062137;
+}
+function LengthConverterCMitC(valNum) {
+  document.getElementById("outputCMitC").innerHTML=valNum/0.0000062137;
+}
+
+function LengthConverterYYtM(valNum) {
+  document.getElementById("outputYYtM").innerHTML=valNum/1.0936;
+}
+function LengthConverterYMtY(valNum) {
+  document.getElementById("outputYMtY").innerHTML=valNum*1.0936;
+}
+function LengthConverterYYtF(valNum) {
+  document.getElementById("outputYYtF").innerHTML=valNum*3;
+}
+function LengthConverterYFtY(valNum) {
+  document.getElementById("outputYFtY").innerHTML=valNum*0.33333;
+}
+function LengthConverterYYtI(valNum) {
+  document.getElementById("outputYYtI").innerHTML=valNum*36;
+}
+function LengthConverterYItY(valNum) {
+  document.getElementById("outputYItY").innerHTML=valNum*0.027778;
+}
+function LengthConverterYYtC(valNum) {
+  document.getElementById("outputYYtC").innerHTML=valNum/0.010936;
+}
+function LengthConverterYCtY(valNum) {
+  document.getElementById("outputYCtY").innerHTML=valNum*0.010936;
+}
+function LengthConverterYYtK(valNum) {
+  document.getElementById("outputYYtK").innerHTML=valNum/1093.6;
+}
+function LengthConverterYKtY(valNum) {
+  document.getElementById("outputYKtY").innerHTML=valNum*1093.6;
+}
+function LengthConverterYYtMi(valNum) {
+  document.getElementById("outputYYtMi").innerHTML=valNum*0.00056818;
+}
+function LengthConverterYMitY(valNum) {
+  document.getElementById("outputYMitY").innerHTML=valNum*1760;
+}
+
+function LengthConverterKKtM(valNum) {
+  document.getElementById("outputKKtM").innerHTML=valNum*1000;
+}
+function LengthConverterKMtK(valNum) {
+  document.getElementById("outputKMtK").innerHTML=valNum/1000;
+}
+function LengthConverterKKtF(valNum) {
+  document.getElementById("outputKKtF").innerHTML=valNum*3280.8;
+}
+function LengthConverterKFtK(valNum) {
+  document.getElementById("outputKFtK").innerHTML=valNum/3280.8;
+}
+function LengthConverterKKtI(valNum) {
+  document.getElementById("outputKKtI").innerHTML=valNum*39370;
+}
+function LengthConverterKItK(valNum) {
+  document.getElementById("outputKItK").innerHTML=valNum/39370;
+}
+function LengthConverterKKtC(valNum) {
+  document.getElementById("outputKKtC").innerHTML=valNum*100000;
+}
+function LengthConverterKCtK(valNum) {
+  document.getElementById("outputKCtK").innerHTML=valNum/100000;
+}
+function LengthConverterKKtY(valNum) {
+  document.getElementById("outputKKtY").innerHTML=valNum*1093.6;
+}
+function LengthConverterKYtK(valNum) {
+  document.getElementById("outputKYtK").innerHTML=valNum/1093.6;
+}
+function LengthConverterKKtMi(valNum) {
+  document.getElementById("outputKKtMi").innerHTML=valNum*0.62137;
+}
+function LengthConverterKMitK(valNum) {
+  document.getElementById("outputKMitK").innerHTML=valNum/0.62137;
+}
+
+function LengthConverterMiMitM(valNum) {
+  document.getElementById("outputMiMitM").innerHTML=valNum/0.00062137;
+}
+function LengthConverterMiMtMi(valNum) {
+  document.getElementById("outputMiMtMi").innerHTML=valNum*0.00062137;
+}
+function LengthConverterMiMitF(valNum) {
+  document.getElementById("outputMiMitF").innerHTML=valNum*5280;
+}
+function LengthConverterMiFtMi(valNum) {
+  document.getElementById("outputMiFtMi").innerHTML=valNum*0.00018939;
+}
+function LengthConverterMiMitI(valNum) {
+  document.getElementById("outputMiMitI").innerHTML=valNum*63360;
+}
+function LengthConverterMiItMi(valNum) {
+  document.getElementById("outputMiItMi").innerHTML=valNum*0.000015783;
+}
+function LengthConverterMiMitC(valNum) {
+  document.getElementById("outputMiMitC").innerHTML=valNum/0.0000062137;
+}
+function LengthConverterMiCtMi(valNum) {
+  document.getElementById("outputMiCtMi").innerHTML=valNum*0.0000062137;
+}
+function LengthConverterMiMitY(valNum) {
+  document.getElementById("outputMiMitY").innerHTML=valNum*1760;
+}
+function LengthConverterMiYtMi(valNum) {
+  document.getElementById("outputMiYtMi").innerHTML=valNum*0.00056818;
+}
+function LengthConverterMiMitK(valNum) {
+  document.getElementById("outputMiMitK").innerHTML=valNum/0.62137;
+}
+function LengthConverterMiKtMi(valNum) {
+  document.getElementById("outputMiKtMi").innerHTML=valNum*0.62137;
+}
+
+/* proba */
+
+/* noviteti */
+
+function lengthConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+  var inputMeterL = document.getElementById("inputMeterL");
+  var inputKilometerL = document.getElementById("inputKilometerL");
+  var inputDecimeterL = document.getElementById("inputDecimeterL");
+  var inputCentimeterL = document.getElementById("inputCentimeterL");
+  var inputMilimeterL = document.getElementById("inputMilimeterL");
+  var inputMicrometerL = document.getElementById("inputMicrometerL");
+  var inputNanometerL = document.getElementById("inputNanometerL");
+  var inputMilesL = document.getElementById("inputMilesL");
+  var inputYardsL = document.getElementById("inputYardsL");
+  var inputFootL = document.getElementById("inputFootL");
+  var inputInchL = document.getElementById("inputInchL");
+  
+  if (source=="inputMeterL") {
+    inputKilometerL.value=(valNum*0.001).toFixed();
+    inputDecimeterL.value=(valNum*10).toFixed();
+    inputCentimeterL.value=(valNum*100).toFixed();
+    inputMilimeterL.value=(valNum*1000).toFixed();
+    inputMicrometerL.value=(valNum*1000000).toFixed();
+    inputNanometerL.value=(valNum*1000000000).toFixed();
+    inputMilesL.value=(valNum*0.0006213712).toFixed();
+    inputYardsL.value=(valNum*1.0936132983).toFixed();
+    inputFootL.value=(valNum*3.280839895).toFixed();
+    inputInchL.value=(valNum*39.37007874).toFixed();
+  }
+
+  if (source=="inputKilometerL") {
+    inputMeterL.value=(valNum*1000).toFixed();
+    inputDecimeterL.value=(valNum*10000).toFixed();
+    inputCentimeterL.value=(valNum*100000).toFixed();
+    inputMilimeterL.value=(valNum*1000000).toFixed();
+    inputMicrometerL.value=(valNum*1000000000).toFixed();
+    inputNanometerL.value=(valNum*1000000000000).toFixed();
+    inputMilesL.value=(valNum*0.6213711922).toFixed();
+    inputYardsL.value=(valNum*1093.6132983).toFixed();
+    inputFootL.value=(valNum*3280.839895).toFixed();
+    inputInchL.value=(valNum*39370.07874).toFixed();
+  }
+
+  if (source=="inputDecimeterL") {
+    inputMeterL.value=(valNum*0.1).toFixed();
+    inputKilometerL.value=(valNum*0.0001).toFixed();
+    inputCentimeterL.value=(valNum*10).toFixed();
+    inputMilimeterL.value=(valNum*100).toFixed();
+    inputMicrometerL.value=(valNum*100000).toFixed();
+    inputNanometerL.value=(valNum*100000000).toFixed();
+    inputMilesL.value=(valNum*0.0000621371).toFixed();
+    inputYardsL.value=(valNum*0.1093613298).toFixed();
+    inputFootL.value=(valNum*0.3280839895).toFixed();
+    inputInchL.value=(valNum*3.937007874).toFixed();
+  }
+
+  if (source=="inputCentimeterL") {
+    inputMeterL.value=(valNum*0.01).toFixed();
+    inputKilometerL.value=(valNum*0.00001).toFixed();
+    inputDecimeterL.value=(valNum*0.1).toFixed();
+    inputMilimeterL.value=(valNum*10).toFixed();
+    inputMicrometerL.value=(valNum*10000).toFixed();
+    inputNanometerL.value=(valNum*10000000).toFixed();
+    inputMilesL.value=(valNum*0.0000062137).toFixed();
+    inputYardsL.value=(valNum*0.010936133).toFixed();
+    inputFootL.value=(valNum*0.032808399).toFixed();
+    inputInchL.value=(valNum*0.3937007874).toFixed();
+  }
+
+  if (source=="inputMilimeterL") {
+    inputMeterL.value=(valNum*0.001).toFixed();
+    inputKilometerL.value=(valNum*0.000001).toFixed();
+    inputDecimeterL.value=(valNum*0.01).toFixed();
+    inputCentimeterL.value=(valNum*0.1).toFixed();
+    inputMicrometerL.value=(valNum*1000).toFixed();
+    inputNanometerL.value=(valNum*1000000).toFixed();
+    inputMilesL.value=(valNum*0.00000062137).toFixed();
+    inputYardsL.value=(valNum*0.0010936133).toFixed();
+    inputFootL.value=(valNum*0.0032808399).toFixed();
+    inputInchL.value=(valNum*0.03937007874).toFixed();
+  }
+
+  if (source=="inputMicrometerL") {
+    inputMeterL.value=(valNum*0.000001).toFixed();
+    inputKilometerL.value=(valNum*0.000000001).toFixed();
+    inputDecimeterL.value=(valNum*0.00001).toFixed();
+    inputCentimeterL.value=(valNum*0.0001).toFixed();
+    inputMilimeterL.value=(valNum*0.001).toFixed();
+    inputNanometerL.value=(valNum*1000).toFixed();
+    inputMilesL.value=(valNum*0.00000000062137).toFixed();
+    inputYardsL.value=(valNum*0.0000010936133).toFixed();
+    inputFootL.value=(valNum*0.0000032808399).toFixed();
+    inputInchL.value=(valNum*0.00003937007874).toFixed();
+  }
+
+  if (source=="inputNanometerL") {
+    inputMeter.value=(valNum*0.000000001).toFixed();
+    inputKilometerL.value=(valNum*0.000000000001).toFixed();
+    inputDecimeterL.value=(valNum*0.00000001).toFixed();
+    inputCentimeterL.value=(valNum*0.0000001).toFixed();
+    inputMilimeterL.value=(valNum*0.000001).toFixed();
+    inputMicrometerL.value=(valNum*0.001).toFixed();
+    inputMilesL.value=(valNum*0.00000000000062137).toFixed();
+    inputYardsL.value=(valNum*0.0000000010936133).toFixed();
+    inputFootL.value=(valNum*0.0000000032808399).toFixed();
+    inputInchL.value=(valNum*0.00000003937007874).toFixed();
+  }
+
+  if (source=="inputMilesL") {
+    inputMeterL.value=(valNum*1609.344).toFixed();
+    inputKilometerL.value=(valNum*1.609344).toFixed();
+    inputDecimeterL.value=(valNum*16093.44).toFixed();
+    inputCentimeterL.value=(valNum*160934.4).toFixed();
+    inputMilimeterL.value=(valNum*1609344).toFixed();
+    inputMicrometerL.value=(valNum*1609344000).toFixed();
+    inputNanometerL.value=(valNum*1609344000000).toFixed();
+    inputYardsL.value=(valNum*1760).toFixed();
+    inputFootL.value=(valNum*5280).toFixed();
+    inputInchL.value=(valNum*63360).toFixed();
+  }
+
+  if (source=="inputYardsL") {
+    inputMeterL.value=(valNum*0.9144).toFixed();
+    inputKilometerL.value=(valNum*0.0009144).toFixed();
+    inputDecimeterL.value=(valNum*9.144).toFixed();
+    inputCentimeterL.value=(valNum*91.44).toFixed();
+    inputMilimeterL.value=(valNum*914.4).toFixed();
+    inputMicrometerL.value=(valNum*914400).toFixed();
+    inputNanometerL.value=(valNum*914400000).toFixed();
+    inputMilesL.value=(valNum*0.0005681818).toFixed();
+    inputFootL.value=(valNum*3).toFixed();
+    inputInchL.value=(valNum*36).toFixed();
+  }
+
+  if (source=="inputFootL") {
+    inputMeterL.value=(valNum*0.3048).toFixed();
+    inputKilometerL.value=(valNum*0.0003048).toFixed();
+    inputDecimeterL.value=(valNum*3.048).toFixed();
+    inputCentimeterL.value=(valNum*30.48).toFixed();
+    inputMilimeterL.value=(valNum*304.8).toFixed();
+    inputMicrometerL.value=(valNum*304800).toFixed();
+    inputNanometerL.value=(valNum*304800000).toFixed();
+    inputMilesL.value=(valNum*0.0001893939).toFixed();
+    inputYardsL.value=(valNum*0.3333333333).toFixed();
+    inputInchL.value=(valNum*12).toFixed();
+  }
+
+  if (source=="nputInchL") {
+    inputMeterL.value=(valNum*0.0254).toFixed();
+    inputKilometerL.value=(valNum*0.0000254).toFixed();
+    inputDecimeterL.value=(valNum*0.254).toFixed();
+    inputCentimeterL.value=(valNum*2.54).toFixed();
+    inputMilimeterL.value=(valNum*25.4).toFixed();
+    inputMicrometerL.value=(valNum*25400).toFixed();
+    inputNanometerL.value=(valNum*25400000).toFixed();
+    inputMilesL.value=(valNum*0.0000157828).toFixed();
+    inputYardsL.value=(valNum*0.0277777778).toFixed();
+    inputFootL.value=(valNum*0.0833333333).toFixed();
+  }
+}
+
+function temperatureConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+  var inputFahrenheit = document.getElementById("inputFahrenheit");
+  var inputCelsius = document.getElementById("inputCelsius");
+  var inputKelvin = document.getElementById("inputKelvin");
+  if (source=="inputFahrenheit") {
+    inputCelsius.value=((valNum-32)/1.8).toFixed(2);
+    inputKelvin.value=(((valNum-32)/1.8)+273.15).toFixed(2);
+  }
+  if (source=="inputCelsius") {
+    inputFahrenheit.value=((valNum*1.8)+32).toFixed(2);
+    inputKelvin.value=((valNum)+273.15).toFixed(2);
+  }
+  if (source=="inputKelvin") {
+    inputFahrenheit.value=(((valNum-273.15)*1.8)+32).toFixed(2);
+    inputCelsius.value=((valNum)-273.15).toFixed(2);
+  }
+}
+
+function weightConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+  var inputPounds = document.getElementById("inputPounds");
+  var inputKilograms = document.getElementById("inputKilograms");
+  var inputOunces = document.getElementById("inputOunces");
+  var inputGrams = document.getElementById("inputGrams");
+  var inputStones = document.getElementById("inputStones");
+  if (source=="inputPounds") {
+    inputKilograms.value=(valNum/2.2046).toFixed(2);
+    inputOunces.value=(valNum*16).toFixed(2);
+    inputGrams.value=(valNum/0.0022046).toFixed();
+    inputStones.value=(valNum*0.071429).toFixed(3);
+  }
+  if (source=="inputKilograms") {
+    inputPounds.value=(valNum*2.2046).toFixed(2);
+    inputOunces.value=(valNum*35.274).toFixed(2);
+    inputGrams.value=(valNum*1000).toFixed();
+    inputStones.value=(valNum*0.1574).toFixed(3);
+  }
+  if (source=="inputOunces") {
+    inputPounds.value=(valNum*0.062500).toFixed(4);
+    inputKilograms.value=(valNum/35.274).toFixed(4);
+    inputGrams.value=(valNum/0.035274).toFixed(1);
+    inputStones.value=(valNum*0.0044643).toFixed(4);
+  }
+  if (source=="inputGrams") {
+    inputPounds.value=(valNum*0.0022046).toFixed(4);
+    inputKilograms.value=(valNum/1000).toFixed(4);
+    inputOunces.value=(valNum*0.035274).toFixed(3);
+    inputStones.value=(valNum*0.00015747).toFixed(5);
+  }
+  if (source=="inputStones") {
+    inputPounds.value=(valNum*14).toFixed(1);
+    inputKilograms.value=(valNum/0.15747).toFixed(1);
+    inputOunces.value=(valNum*224).toFixed();
+    inputGrams.value=(valNum/0.00015747).toFixed();
+  }
+
+}
+
+function speedConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+  var inputMPH = document.getElementById("inputMPH");
+  var inputKPH = document.getElementById("inputKPH");
+  var inputKnots = document.getElementById("inputKnots");
+  var inputMach = document.getElementById("inputMach");
+  if (source=="inputMPH") {
+    inputKPH.value=(valNum*1.609344).toFixed(2);
+    inputKnots.value=(valNum/1.150779).toFixed(2);
+    inputMach.value=(valNum/761.207).toFixed(4);
+  }
+  if (source=="inputKPH") {
+    inputMPH.value=(valNum/1.609344).toFixed(2);
+    inputKnots.value=(valNum/1.852).toFixed(2);
+    inputMach.value=(valNum/1225.044).toFixed(5);
+  }
+  if (source=="inputKnots") {
+    inputMPH.value=(valNum*1.150779).toFixed(2);
+    inputKPH.value=(valNum*1.852).toFixed(2);
+    inputMach.value=(valNum/661.4708).toFixed(4);
+  }
+  if (source=="inputMach") {
+    inputMPH.value=(valNum*761.207).toFixed();
+    inputKPH.value=(valNum*1225.044).toFixed();
+    inputKnots.value=(valNum*661.4708).toFixed();
+  }
+}
+
+function kmConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+
+  var inputFeet = document.getElementById("inputFeett");
+  var inputMeters = document.getElementById("inputMeterss");
+  var inputKmm = document.getElementById("inputKmm");
+
+  if (source=="inputFeett") {
+    inputMeterss.value=(valNum*45).toFixed();
+    inputKmm.value=(valNum/5).toFixed();
+  }
+  if (source=="inputMeterss") {
+    inputFeett.value=(valNum/2).toFixed();
+    inputKmm.value=(valNum/8).toFixed();
+  }
+  if (source=="inputKmm") {
+    inputFeett.value=(valNum*79).toFixed();
+    inputMeterss.value=(valNum*852).toFixed();
+  }
+}
+
+</script>
+
+

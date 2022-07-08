@@ -1,0 +1,651 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+body {
+  background: #fff;
+  font-family: 'Arimo', sans-serif;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+}
+
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.w-1 .ps-1{
+  height: 350px;
+  width: 530px;
+}
+
+.w-2 .ps-2{
+  height: 350px;
+  width: 530px;
+
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;
+  /* box-shadow: 0 0.5rem 0.8rem #00000080; */
+}
+
+.panels {
+  background: #fff;
+  /* box-shadow: 0 2rem 2rem #00000080; */
+  height: 630px;
+  /* width: 100%; */
+  width: 700px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 2% 5%;
+}
+
+.panel {
+  display: none;
+  animation: fadein .8s;
+  padding-left: 2%;
+}
+
+/* .p-F3{
+  background: #ffa500;
+} */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 4% 0 1% 0;
+  text-align: center;
+}
+
+.radio {
+  display: none;
+}
+
+h5{
+  padding: 2% 0 1% 2%;
+}
+
+.l-title{
+  padding-top: 2%;
+}
+
+#oneF:checked~.panels #oneF-panel,
+#twoF:checked~.panels #twoF-panel,
+#threeF:checked~.panels #threeF-panel,
+#fourF:checked~.panels #fourF-panel,
+#fiveF:checked~.panels #fiveF-panel,
+#sixF:checked~.panels #sixF-panel {
+  display: block
+}
+
+#oneM:checked~.panels #oneM-panel,
+#twoM:checked~.panels #twoM-panel,
+#threeM:checked~.panels #threeM-panel,
+#fourM:checked~.panels #fourM-panel,
+#fiveM:checked~.panels #fiveM-panel,
+#sixM:checked~.panels #sixM-panel {
+  display: block
+}
+
+#oneFa:checked~.panels #oneFa-panel,
+#twoCe:checked~.panels #twoCe-panel,
+#threeKe:checked~.panels #threeKe-panel {
+  display: block
+}
+
+#oneI:checked~.panels #oneI-panel,
+#twoI:checked~.panels #twoI-panel,
+#threeI:checked~.panels #threeI-panel,
+#fourI:checked~.panels #fourI-panel,
+#fiveI:checked~.panels #fiveI-panel,
+#sixI:checked~.panels #sixI-panel {
+  display: block
+}
+#oneC:checked~.panels #oneC-panel,
+#twoC:checked~.panels #twoC-panel,
+#threeC:checked~.panels #threeC-panel,
+#fourC:checked~.panels #fourC-panel,
+#fiveC:checked~.panels #fiveC-panel,
+#sixC:checked~.panels #sixC-panel {
+  display: block
+}
+
+#oneY:checked~.panels #oneY-panel,
+#twoY:checked~.panels #twoY-panel,
+#threeY:checked~.panels #threeY-panel,
+#fourY:checked~.panels #fourY-panel,
+#fiveY:checked~.panels #fiveY-panel,
+#sixY:checked~.panels #sixY-panel {
+  display: block
+}
+
+#oneK:checked~.panels #oneK-panel,
+#twoK:checked~.panels #twoK-panel,
+#threeK:checked~.panels #threeK-panel,
+#fourK:checked~.panels #fourK-panel,
+#fiveK:checked~.panels #fiveK-panel,
+#sixK:checked~.panels #sixK-panel {
+  display: block
+}
+
+#oneMi:checked~.panels #oneMi-panel,
+#twoMi:checked~.panels #twoMi-panel,
+#threeMi:checked~.panels #threeMi-panel,
+#fourMi:checked~.panels #fourMi-panel,
+#fiveMi:checked~.panels #fiveMi-panel,
+#sixMi:checked~.panels #sixMi-panel {
+  display: block
+}
+
+#oneS:checked~.panels #oneS-panel,
+#twoS:checked~.panels #twoS-panel,
+#threeS:checked~.panels #threeS-panel,
+#fourS:checked~.panels #fourS-panel,
+#fiveS:checked~.panels #fiveS-panel,
+#sixS:checked~.panels #sixS-panel {
+  display: block
+}
+
+/* -------------------------- */
+
+#oneF:checked~.tabs #oneF-tab,
+#twoF:checked~.tabs #twoF-tab,
+#threeF:checked~.tabs #threeF-tab,
+#fourF:checked~.tabs #fourF-tab,
+#fiveF:checked~.tabs #fiveF-tab,
+#sixF:checked~.tabs #sixF-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+
+#oneM:checked~.tabs #oneM-tab,
+#twoM:checked~.tabs #twoM-tab,
+#threeM:checked~.tabs #threeM-tab,
+#fourM:checked~.tabs #fourM-tab,
+#fiveM:checked~.tabs #fiveM-tab,
+#sixM:checked~.tabs #sixM-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneFa:checked~.tabs #oneFa-tab,
+#twoCe:checked~.tabs #twoCe-tab,
+#threeKe:checked~.tabs #threeKe-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneI:checked~.tabs #oneI-tab,
+#twoI:checked~.tabs #twoI-tab,
+#threeI:checked~.tabs #threeI-tab,
+#fourI:checked~.tabs #fourI-tab,
+#fiveI:checked~.tabs #fiveI-tab,
+#sixI:checked~.tabs #sixI-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneC:checked~.tabs #oneC-tab,
+#twoC:checked~.tabs #twoC-tab,
+#threeC:checked~.tabs #threeC-tab,
+#fourC:checked~.tabs #fourC-tab,
+#fiveC:checked~.tabs #fiveC-tab,
+#sixC:checked~.tabs #sixC-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneY:checked~.tabs #oneY-tab,
+#twoY:checked~.tabs #twoY-tab,
+#threeY:checked~.tabs #threeY-tab,
+#fourY:checked~.tabs #fourY-tab,
+#fiveY:checked~.tabs #fiveY-tab,
+#sixY:checked~.tabs #sixY-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneK:checked~.tabs #oneK-tab,
+#twoK:checked~.tabs #twoK-tab,
+#threeK:checked~.tabs #threeK-tab,
+#fourK:checked~.tabs #fourK-tab,
+#fiveK:checked~.tabs #fiveK-tab,
+#sixK:checked~.tabs #sixK-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneMi:checked~.tabs #oneMi-tab,
+#twoMi:checked~.tabs #twoMi-tab,
+#threeMi:checked~.tabs #threeMi-tab,
+#fourMi:checked~.tabs #fourMi-tab,
+#fiveMi:checked~.tabs #fiveMi-tab,
+#sixMi:checked~.tabs #sixMi-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+#oneS:checked~.tabs #oneS-tab,
+#twoS:checked~.tabs #twoS-tab,
+#threeS:checked~.tabs #threeS-tab,
+#fourS:checked~.tabs #fourS-tab,
+#fiveS:checked~.tabs #fiveS-tab,
+#sixS:checked~.tabs #sixS-tab {
+  background: #fffffff6;
+  color: #000;
+  /* border-top: 3px solid #000; */
+}
+
+/* tabs --------------------------------------------------------------------- */
+
+/*
+  CSS for the main interaction
+*/
+.tabset>input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+  Styling
+*/
+/* body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+} */
+
+.tabset>label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset>label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+/* .tablab1:hover,
+.tabinp1:focus+.tablab1
+.tabinp1:checked+.tablab1::after{
+  color: #e69500;
+} */
+
+.tabset>.tablab1:hover,
+.tabset>.tabinp1:focus+.tablab1 {
+  color: #009f00;
+}
+
+.tabset>.tablab2:hover,
+.tabset>.tabinp2:focus+.tablab2 {
+  color: #4da6ff;
+}
+
+.tabset>.tablab3:hover,
+.tabset>.tabinp3:focus+.tablab3 {
+  color: #e69500;
+}
+
+.tabset>.tablab4:hover,
+.tabset>.tabinp4:focus+.tablab4 {
+  color: #009999;
+}
+
+
+
+.tabset>.tablab1:hover::after,
+.tabset>.tabinp1:focus+.tablab1::after,
+.tabset>.tabinp1:checked+.tablab1::after {
+  background: #009f00;
+}
+
+.tabset>.tablab2:hover::after,
+.tabset>.tabinp2:focus+.tablab2::after,
+.tabset>.tabinp2:checked+.tablab2::after {
+  background: #4da6ff;
+}
+
+.tabset>.tablab3:hover::after,
+.tabset>.tabinp3:focus+.tablab3::after,
+.tabset>.tabinp3:checked+.tablab3::after {
+  background: #e69500;
+}
+
+.tabset>.tablab4:hover::after,
+.tabset>.tabinp4:focus+.tablab4::after,
+.tabset>.tabinp4:checked+.tablab4::after {
+  background: #009999;
+}
+
+/* .tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+  background: #e69500;
+} */
+
+.tabset>input:checked+label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+  Demo purposes only
+*/
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
+
+/* body {
+  padding: 30px;
+} */
+
+.tabset {
+  width: 65em;
+  height: 35em;;
+}
+
+/* button ----------------------------------------------------------------------*/
+
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-6 {
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 2px;
+  background: #000;
+}
+
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+
+.btn-6:hover {
+  color: #000;
+  background: transparent;
+}
+
+.btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  background: #000;
+}
+
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+  width: 100%;
+}
+
+.btn-6 span:hover:after {
+  width: 100%;
+}
+
+/* navbar ----------------------------------------------------------------- */
+
+.navbar-customclass {
+  background-color: black;
+}
+
+.navbar .navbar-nav .nav-link{
+  color: white
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white
+}
+
+.navbar .navbar-nav .l1:hover {
+  color: #1abc9c;
+  transition: 1s;
+}
+
+.navbar .navbar-nav .l2:hover {
+  color: #e74c3c;
+  transition: 1s;
+}
+
+.navbar .navbar-nav .l3:hover {
+  color: #3498db;
+  transition: 1s;
+}
+
+.navbar .navbar-nav .l4:hover {
+  color: #9b59b6;
+  transition: 1s;
+}
+
+.navbar .navbar-nav .l5:hover {
+  color: #e67e22;
+  transition: 1s;
+}
+
+
+/* label shadow color --------------------------------------------------------------- */
+
+.form-control{
+  border-radius: 0%;
+}
+
+/* .form-control:focus{
+  border-color: #e67e22;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  0 0 8px #e67e22;
+  outline: 0 none;
+} */
+
+/* .form-control:focus {
+  border-color: none;
+  outline: 0 none;
+} */
+
+.form-control:focus {
+  border-color: lightgray;
+  box-shadow: inset 0 1px 1px white, 0 0 20px lightgray;
+}
+
+/* .form-control:focus{
+  caret-color: #e67e22;
+  color:#faa406;
+  /* box-shadow: black; */
+
+.fc1:focus{
+  caret-color: #009f00;
+  color:#009f00;
+  font-weight:600;
+}
+
+.fc2:focus{
+  caret-color: #4da6ff;
+  color:#4da6ff;
+  font-weight:600;
+}
+
+.fc3:focus{
+  caret-color: #e67e22;
+  color:#e67e22;
+  font-weight:600;
+}
+
+.fc4:focus {
+  caret-color: #009999;
+  color: #009999;
+  font-weight:600;
+}
+
+
+/* learn more btn */
+
